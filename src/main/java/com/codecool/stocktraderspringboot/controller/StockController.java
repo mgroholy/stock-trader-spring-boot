@@ -20,7 +20,7 @@ public class StockController {
     }
 
     @GetMapping("/buy/{stock}/{price}")
-    public boolean buyStock(@PathVariable("stock") String symbol, @PathVariable("price") double bid) throws IOException {
+    public String buyStock(@PathVariable("stock") String symbol, @PathVariable("price") double bid) throws IOException {
         return trader.buy(symbol, bid);
     }
 }
