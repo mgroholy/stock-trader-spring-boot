@@ -3,8 +3,11 @@ package com.codecool.stocktraderspringboot.services;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.json.JSONObject;
+import org.springframework.stereotype.Component;
+
 import java.io.IOException;
 
+@Component
 public class StockAPIService {
 
     private static final String API_PATH = "https://run.mocky.io/v3/9e14e086-84c2-4f98-9e36-54928830c980?stock=%s";

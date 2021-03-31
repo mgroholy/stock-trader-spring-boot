@@ -1,9 +1,11 @@
 package com.codecool.stocktraderspringboot.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
+@Component
 public class Trader {
 
     private StockAPIService stockService;
